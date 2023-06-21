@@ -38,6 +38,7 @@ import tripguide from './tripguide.png';
 import hnicer from './hnicer.png';
 import itech from './itech.png';
 import travelPlanner from './travel_planner.png';
+import shinhanSec from './shinhansec.png';
 
 export {
   logo,
@@ -76,5 +77,6 @@ export {
   itech,
   travelPlanner,
   mysql,
-  vue
+  vue,
+  shinhanSec
 };

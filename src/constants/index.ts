@@ -20,7 +20,8 @@ import {
   hnicer,
   itech,
   travelPlanner,
-  mysql
+  mysql,
+  shinhanSec
 } from '../assets';
 
 export const navLinks = [
@@ -235,6 +236,19 @@ const projects = [
     ],
     image: travelPlanner,
     source_code_link: 'https://github.com/dhnbroken/travel-planner-group'
+  },
+  {
+    name: 'Shinhan Securities',
+    description:
+      'A web application for tracking, trading, and buying/selling stocks. This is a product of Shinhan Group. I am involved in the maintenance and development of new features.',
+    tags: [
+      {
+        name: 'reactjs',
+        color: 'blue-text-gradient'
+      }
+    ],
+    image: shinhanSec,
+    source_code_link: 'https://online.shinhansec.com.vn/'
   }
 ];
 
