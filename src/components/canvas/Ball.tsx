@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Decal, Float, OrbitControls, Preload, useTexture } from '@react-three/drei';
 
@@ -12,7 +12,7 @@ interface IBallProps {
   imgUrl: string;
 }
 
-const Ball: React.FC<IBallProps> = ({ imgUrl }) => {
+const Ball = ({ imgUrl }: IBallProps) => {
   const [decal] = useTexture([imgUrl]);
   return (
     <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
@@ -27,7 +27,7 @@ const Ball: React.FC<IBallProps> = ({ imgUrl }) => {
   );
 };
 
-const BallCanvas: React.FC<IProps> = ({ icon }) => {
+const BallCanvas = ({ icon }: IProps) => {
   return (
     <Canvas frameloop='demand' gl={{ preserveDrawingBuffer: true }}>
       <Suspense fallback={<CanvasLoader />}>
