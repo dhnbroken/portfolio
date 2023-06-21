@@ -15,14 +15,15 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs
+  threejs,
+  springboot,
+  ncc,
+  shinhands,
+  hnicer,
+  itech,
+  travelPlanner,
+  mysql,
+  vue
 } from '../assets';
 
 export const navLinks = [
@@ -109,62 +110,44 @@ const technologies = [
     icon: figma
   },
   {
+    name: 'springboot',
+    icon: springboot
+  },
+  {
     name: 'docker',
     icon: docker
-  }
+  },
+  {
+    name: 'mysql',
+    icon: mysql
+  },
+  { name: 'vue', icon: vue }
 ];
 
 const experiences = [
   {
-    title: 'React.js Developer',
-    company_name: 'Starbucks',
-    icon: starbucks,
-    iconBg: '#383E56',
-    date: 'March 2020 - April 2021',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
-    ]
-  },
-  {
-    title: 'React Native Developer',
-    company_name: 'Tesla',
-    icon: tesla,
+    title: 'Front-end Intern',
+    company_name: 'NCC Plus',
+    icon: ncc,
     iconBg: '#E6DEDD',
-    date: 'Jan 2021 - Feb 2022',
+    date: 'September 2022 - December 2022',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      'Planned, developed, and tested web applications.',
+      'Learning Frontend frameworks: React, Angular',
+      'Participate in the development of a time-sheet management project.',
+      'Learn web development processes, communication techniques, and reporting methods.'
     ]
   },
   {
-    title: 'Web Developer',
-    company_name: 'Shopify',
-    icon: shopify,
-    iconBg: '#383E56',
-    date: 'Jan 2022 - Jan 2023',
+    title: 'ReactJS Developer',
+    company_name: 'ShinhanDS',
+    icon: shinhands,
+    iconBg: '#FFFFFF',
+    date: 'April 2023 - Present',
     points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
-    ]
-  },
-  {
-    title: 'Full stack Developer',
-    company_name: 'Meta',
-    icon: meta,
-    iconBg: '#E6DEDD',
-    date: 'Jan 2023 - Present',
-    points: [
-      'Developing and maintaining web applications using React.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.'
+      'Worked as a productive and positive team member to design, code, test, report, and debug operations.',
+      'Participate in developing new features for the stock market website.',
+      'Contribute to the development of versatile features across various platforms including websites, mobile web, and desktop applications.'
     ]
   }
 ];
@@ -195,9 +178,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: 'Car Rent',
+    name: 'HNicer',
     description:
-      'Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.',
+      'Web-based platform that allows users to search, book, and manage sneaker from HNicer - a mockup store branch, providing a convenient and efficient solution for transportation needs.',
     tags: [
       {
         name: 'react',
@@ -210,52 +193,60 @@ const projects = [
       {
         name: 'tailwind',
         color: 'pink-text-gradient'
+      },
+      {
+        name: 'nodejs',
+        color: 'green-text-gradient'
       }
     ],
-    image: carrent,
-    source_code_link: 'https://github.com/'
+    image: hnicer,
+    source_code_link: 'https://github.com/dhnbroken/HNicer-ecommerce'
   },
   {
-    name: 'Job IT',
+    name: 'i-Tech Store',
     description:
-      'Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.',
+      'A web application that allows users to purchase products from Apple. And the admin can manage the products. The website features an eye-catching design and support for English and Vietnamese.',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient'
       },
       {
-        name: 'restapi',
+        name: 'springboot',
         color: 'green-text-gradient'
       },
       {
-        name: 'scss',
+        name: 'tailwind',
         color: 'pink-text-gradient'
+      },
+      {
+        name: 'mysql',
+        color: 'green-text-gradient'
       }
     ],
-    image: jobit,
-    source_code_link: 'https://github.com/'
+    image: itech,
+    source_code_link: 'https://github.com/ThaoHienPhan/JAVA-Project'
   },
   {
-    name: 'Trip Guide',
+    name: 'Travel Planner Group',
     description:
-      'A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.',
+      'A web application that enables users to find popular nearby locations such as restaurants, hotels, attractions, and share them within a group chat. It facilitates easy group travel planning and management.',
     tags: [
       {
-        name: 'nextjs',
+        name: 'reactjs',
         color: 'blue-text-gradient'
       },
       {
-        name: 'supabase',
+        name: 'firebase',
         color: 'green-text-gradient'
       },
       {
-        name: 'css',
+        name: 'nodejs',
         color: 'pink-text-gradient'
       }
     ],
-    image: tripguide,
-    source_code_link: 'https://github.com/'
+    image: travelPlanner,
+    source_code_link: 'https://github.com/dhnbroken/travel-planner-group'
   }
 ];
 
