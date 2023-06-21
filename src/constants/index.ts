@@ -14,16 +14,13 @@ import {
   mongodb,
   git,
   figma,
-  docker,
-  threejs,
   springboot,
   ncc,
   shinhands,
   hnicer,
   itech,
   travelPlanner,
-  mysql,
-  vue
+  mysql
 } from '../assets';
 
 export const navLinks = [
@@ -98,10 +95,6 @@ const technologies = [
     icon: mongodb
   },
   {
-    name: 'Three JS',
-    icon: threejs
-  },
-  {
     name: 'git',
     icon: git
   },
@@ -114,14 +107,9 @@ const technologies = [
     icon: springboot
   },
   {
-    name: 'docker',
-    icon: docker
-  },
-  {
     name: 'mysql',
     icon: mysql
-  },
-  { name: 'vue', icon: vue }
+  }
 ];
 
 const experiences = [
