@@ -14,14 +14,15 @@ import {
   mongodb,
   git,
   figma,
-  springboot,
+  go,
   ncc,
   shinhands,
   hnicer,
   itech,
   travelPlanner,
   mysql,
-  shinhanSec
+  shinhanSec,
+  reactQuery
 } from '../assets';
 
 export const navLinks = [
@@ -34,6 +35,10 @@ export const navLinks = [
     title: 'Work'
   },
   {
+    id: 'projects',
+    title: 'Projects'
+  },
+  {
     id: 'contact',
     title: 'Contact'
   }
@@ -41,20 +46,12 @@ export const navLinks = [
 
 const services = [
   {
-    title: 'Web Developer',
+    title: 'Frontend Developer',
     icon: web
-  },
-  {
-    title: 'React Native Developer',
-    icon: mobile
   },
   {
     title: 'Backend Developer',
     icon: backend
-  },
-  {
-    title: 'Content Creator',
-    icon: creator
   }
 ];
 
@@ -92,6 +89,14 @@ const technologies = [
     icon: nodejs
   },
   {
+    name: 'go',
+    icon: go
+  },
+  {
+    name: 'react-query',
+    icon: reactQuery
+  },
+  {
     name: 'MongoDB',
     icon: mongodb
   },
@@ -102,10 +107,6 @@ const technologies = [
   {
     name: 'figma',
     icon: figma
-  },
-  {
-    name: 'springboot',
-    icon: springboot
   },
   {
     name: 'mysql',
@@ -138,30 +139,6 @@ const experiences = [
       'Participate in developing new features for the stock market website.',
       'Contribute to the development of versatile features across various platforms including websites, mobile web, and desktop applications.'
     ]
-  }
-];
-
-const testimonials = [
-  {
-    testimonial: 'I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.',
-    name: 'Sara Lee',
-    designation: 'CFO',
-    company: 'Acme Co',
-    image: 'https://randomuser.me/api/portraits/women/4.jpg'
-  },
-  {
-    testimonial: "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: 'Chris Brown',
-    designation: 'COO',
-    company: 'DEF Corp',
-    image: 'https://randomuser.me/api/portraits/men/5.jpg'
-  },
-  {
-    testimonial: "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: 'Lisa Wang',
-    designation: 'CTO',
-    company: '456 Enterprises',
-    image: 'https://randomuser.me/api/portraits/women/6.jpg'
   }
 ];
 
@@ -222,7 +199,7 @@ const projects = [
       'A web application that enables users to find popular nearby locations such as restaurants, hotels, attractions, and share them within a group chat. It facilitates easy group travel planning and management.',
     tags: [
       {
-        name: 'reactjs',
+        name: 'react',
         color: 'blue-text-gradient'
       },
       {
@@ -243,8 +220,16 @@ const projects = [
       'A web application for tracking, trading, and buying/selling stocks. This is a product of Shinhan Group. I am involved in the maintenance and development of new features.',
     tags: [
       {
-        name: 'reactjs',
+        name: 'react',
         color: 'blue-text-gradient'
+      },
+      {
+        name: 'tailwindcss',
+        color: 'pink-text-gradient'
+      },
+      {
+        name: 'electron',
+        color: 'green-text-gradient'
       }
     ],
     image: shinhanSec,
@@ -252,4 +237,4 @@ const projects = [
   }
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, projects };

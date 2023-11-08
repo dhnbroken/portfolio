@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 import { styles } from '~/styles';
 import { fadeIn, textVariant } from '../utils/motion.js';
-import { testimonials } from '~/constants';
+// import { testimonials } from '~/constants';
 
 import { SectionWrapper } from '~/hoc';
 
@@ -52,11 +52,11 @@ const Feedbacks = () => {
         </motion.div>
       </div>
 
-      <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
+      {/* <div className={`${styles.paddingX} -mt-20 pb-14 flex flex-wrap gap-7`}>
         {testimonials.map((testimonial, i) => (
           <FeedbackCard key={`${testimonial.name}_${i}`} index={i} {...testimonial} />
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -38,14 +38,16 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Overview.</h2>
       </motion.div>
 
-      <motion.p variants={fadeIn('', '', 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
-        I&apos;m a skilled software developer with experience in TypeScript and JavaScript, and expertise in frameworks
-        like React, Node.js, and Three.js. I&apos;m a quick learner and collaborate closely with clients to create
-        efficient, scalable, and user-friendly solutions that solve real-world problems. Let&apos;s work together to
-        bring your ideas to life!
+      <motion.p variants={fadeIn('', '', 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-6xl leading-[30px]'>
+        I&apos;m a skilled frontend developer with experience in TypeScript and JavaScript, and familiar with frameworks
+        like React, Nextjs. I&apos;m a skilled frontend developer with experience in TypeScript and JavaScript, and
+        familiar with frameworks like React, Nextjs. I also have a basic understanding of backend technologies like
+        Golang and Node.js. I&apos;m a quick learner and collaborate closely with clients to create efficient, scalable,
+        and user-friendly solutions that solve real-world problems. Let&apos;s work together to bring your ideas to
+        life!
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap lg:flex-nowrap gap-10'>
+      <div className='mt-20 flex justify-center flex-wrap lg:flex-nowrap gap-10'>
         {services.map((service, i) => (
           <ServiceCard key={`${service.title}_${i}`} index={i} {...service} />
         ))}
